@@ -8,71 +8,121 @@
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #333; }
         h1 { font-size: 28px; margin-bottom: 4px; }
         h2 { font-size: 20px; margin-top: 32px; }
+        h3 { font-size: 16px; margin-top: 24px; }
         .date { color: #666; margin-bottom: 32px; }
         ul { padding-left: 24px; }
         a { color: #1a73e8; }
+        table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+        th { background: #f5f5f5; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="date">Effective Date: April 13, 2026</p>
+    <p class="date">Effective Date: April 13, 2026 | Last Updated: April 14, 2026</p>
 
-    <p>Scale Dynamics Limited LLC ("we", "us", or "our") operates the WePray: Daily Bible Verse mobile application ("the App"). This Privacy Policy explains how we collect, use, and protect your information.</p>
+    <p>Scale Dynamics Limited LLC ("we", "us", or "our") operates the WePray: Daily Bible Verse mobile application ("the App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the App.</p>
 
     <h2>1. Information We Collect</h2>
-    <h3>Information You Provide</h3>
+
+    <h3>1.1 Information You Provide Directly</h3>
     <ul>
-        <li><strong>Onboarding Preferences:</strong> Your faith journey stage, Bible reading frequency, and topic interests. This data is stored locally on your device and is not transmitted to our servers.</li>
+        <li><strong>Onboarding Preferences:</strong> Your faith journey stage, Bible reading frequency, and topic interests. This data is stored locally on your device only.</li>
         <li><strong>Chat Messages:</strong> Messages you send in the AI Chat feature are transmitted to OpenAI's API to generate responses. We do not store your chat history on our servers.</li>
+        <li><strong>Subscription Information:</strong> If you subscribe to WePray Pro, your payment is processed by Apple through StoreKit. We do not collect or store your payment card details.</li>
     </ul>
 
-    <h3>Automatically Collected Information</h3>
+    <h3>1.2 Information Collected Automatically</h3>
+    <table>
+        <tr><th>Data Type</th><th>Purpose</th><th>Third Party</th></tr>
+        <tr><td>App usage events (e.g., screen views, feature usage)</td><td>Improve app experience</td><td>Firebase Analytics (Google)</td></tr>
+        <tr><td>Install attribution data</td><td>Measure marketing effectiveness</td><td>Adjust GmbH</td></tr>
+        <tr><td>Device identifiers (IDFA, with consent)</td><td>Attribution analytics</td><td>Adjust GmbH</td></tr>
+        <tr><td>Device type, OS version, app version</td><td>Technical support & compatibility</td><td>Firebase Analytics</td></tr>
+        <tr><td>Crash reports</td><td>App stability improvement</td><td>Firebase Crashlytics (if enabled)</td></tr>
+    </table>
+
+    <h3>1.3 Information We Do NOT Collect</h3>
     <ul>
-        <li><strong>Analytics Data:</strong> We use Firebase Analytics to collect anonymized usage data such as screen views, feature usage, and app performance metrics. This data does not personally identify you.</li>
-        <li><strong>Attribution Data:</strong> We use Adjust SDK to understand how users discover our app. With your consent (via App Tracking Transparency), Adjust may collect your device's advertising identifier (IDFA) for attribution purposes.</li>
-        <li><strong>Subscription Information:</strong> Purchase and subscription status is managed by Apple through StoreKit and is subject to Apple's privacy practices.</li>
+        <li>We do not collect your name, email address, phone number, or any personal contact information.</li>
+        <li>We do not collect precise geolocation data.</li>
+        <li>We do not collect health, financial, or biometric data.</li>
+        <li>We do not require user accounts or login credentials.</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
     <ul>
-        <li>To provide and improve the App's features</li>
-        <li>To personalize your devotional and Bible study experience</li>
-        <li>To generate AI-powered Bible guidance responses</li>
+        <li>To provide and maintain the App's features, including AI-powered Bible guidance</li>
+        <li>To personalize your devotional and Bible study experience based on your onboarding preferences</li>
+        <li>To generate AI-powered Bible study responses via OpenAI's API</li>
         <li>To analyze app usage patterns and improve user experience</li>
-        <li>To measure the effectiveness of our marketing efforts</li>
+        <li>To measure the effectiveness of our marketing efforts (install attribution)</li>
+        <li>To detect, prevent, and address technical issues</li>
     </ul>
 
-    <h2>3. Third-Party Services</h2>
-    <p>The App uses the following third-party services:</p>
-    <ul>
-        <li><strong>OpenAI:</strong> Processes chat messages to generate AI responses. See <a href="https://openai.com/privacy">OpenAI's Privacy Policy</a>.</li>
-        <li><strong>Firebase Analytics (Google):</strong> Collects anonymized usage analytics. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy Information</a>.</li>
-        <li><strong>Adjust:</strong> Provides install attribution. See <a href="https://www.adjust.com/terms/privacy-policy/">Adjust's Privacy Policy</a>.</li>
-        <li><strong>Superwall:</strong> Manages paywall presentation. See <a href="https://superwall.com/privacy">Superwall's Privacy Policy</a>.</li>
-    </ul>
+    <h2>3. Third-Party Services and Data Sharing</h2>
+    <p>We share data with the following third-party services, each of which has their own privacy policy governing the use of your information:</p>
 
-    <h2>4. App Tracking Transparency</h2>
-    <p>We request your permission before tracking your activity across other companies' apps and websites. You can change this at any time in your device's Settings > Privacy & Security > Tracking.</p>
+    <table>
+        <tr><th>Service</th><th>Purpose</th><th>Data Shared</th><th>Privacy Policy</th></tr>
+        <tr><td>OpenAI</td><td>AI chat responses & text-to-speech</td><td>Chat messages (processed in real-time, not stored)</td><td><a href="https://openai.com/privacy">openai.com/privacy</a></td></tr>
+        <tr><td>Firebase Analytics (Google)</td><td>Usage analytics</td><td>Anonymized event data, device info</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/privacy</a></td></tr>
+        <tr><td>Adjust GmbH</td><td>Install attribution</td><td>Device identifiers, install source</td><td><a href="https://www.adjust.com/terms/privacy-policy/">adjust.com/privacy</a></td></tr>
+        <tr><td>Superwall Inc.</td><td>Paywall management</td><td>Subscription status</td><td><a href="https://superwall.com/privacy">superwall.com/privacy</a></td></tr>
+        <tr><td>Apple Inc.</td><td>In-app purchases, App Store analytics</td><td>Purchase transactions</td><td><a href="https://www.apple.com/privacy/">apple.com/privacy</a></td></tr>
+    </table>
+
+    <p>We do not sell, trade, or rent your personal information to third parties. We do not use your data for behavioral advertising.</p>
+
+    <h2>4. App Tracking Transparency (ATT)</h2>
+    <p>We request your permission via Apple's App Tracking Transparency framework before collecting your device's advertising identifier (IDFA). This identifier is used solely for install attribution analytics through Adjust. You can change your tracking preference at any time in:</p>
+    <p><strong>Settings → Privacy & Security → Tracking → WePray</strong></p>
 
     <h2>5. Data Storage and Security</h2>
-    <p>Your onboarding preferences and reading progress are stored locally on your device using UserDefaults. We do not operate backend servers that store your personal data. Chat messages are processed in real-time and are not retained after the response is generated.</p>
-
-    <h2>6. Children's Privacy</h2>
-    <p>The App is not directed to children under 13. We do not knowingly collect personal information from children under 13.</p>
-
-    <h2>7. Your Rights</h2>
-    <p>You can:</p>
     <ul>
-        <li>Deny or revoke tracking permission via iOS Settings</li>
-        <li>Delete the App to remove all locally stored data</li>
-        <li>Manage your subscription through Apple's subscription management</li>
+        <li><strong>Local Storage:</strong> Your onboarding preferences, reading progress, and app settings are stored locally on your device using iOS standard storage (UserDefaults). This data is not transmitted to any server.</li>
+        <li><strong>Chat Data:</strong> Chat messages are processed by OpenAI's API in real-time and are not retained on our servers after the response is generated.</li>
+        <li><strong>No Backend Servers:</strong> We do not operate our own backend servers that store user data. All server-side processing is handled by the third-party services listed above.</li>
+        <li><strong>Security:</strong> We implement commercially reasonable security measures to protect data transmitted to third-party services, including HTTPS encryption for all API communications.</li>
     </ul>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. The updated version will be indicated by the "Effective Date" at the top of this page.</p>
+    <h2>6. Data Retention</h2>
+    <ul>
+        <li>Local app data is retained until you delete the App.</li>
+        <li>Analytics data is retained according to the retention policies of Firebase Analytics (default 14 months) and Adjust.</li>
+        <li>Chat messages are not retained after the AI response is generated.</li>
+    </ul>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy, please contact us at:<br>
-    <a href="mailto:developer@auroredgetech.com">developer@auroredgetech.com</a></p>
+    <h2>7. Your Rights and Choices</h2>
+    <p>Depending on your location, you may have the following rights:</p>
+    <ul>
+        <li><strong>Access:</strong> Request information about the data we collect about you.</li>
+        <li><strong>Deletion:</strong> Delete the App to remove all locally stored data. For data held by third-party services, contact them directly using the links in Section 3.</li>
+        <li><strong>Opt-Out of Tracking:</strong> Deny or revoke tracking permission via iOS Settings → Privacy & Security → Tracking.</li>
+        <li><strong>Manage Subscriptions:</strong> Manage or cancel your subscription through Apple's subscription management (Settings → [Your Name] → Subscriptions).</li>
+        <li><strong>Disable Analytics:</strong> You can limit analytics collection by disabling tracking in your device settings.</li>
+    </ul>
+
+    <h3>7.1 For California Residents (CCPA)</h3>
+    <p>Under the California Consumer Privacy Act, you have the right to know what personal information is collected, request deletion, and opt out of the sale of personal information. We do not sell personal information. To exercise your rights, contact us at the email below.</p>
+
+    <h3>7.2 For European Users (GDPR)</h3>
+    <p>If you are located in the European Economic Area, you have additional rights including the right to access, rectify, port, and erase your data, as well as the right to restrict and object to certain processing. Our legal basis for processing is legitimate interest (improving our service) and consent (for tracking). To exercise your rights, contact us at the email below.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>The App is not directed to children under the age of 13 (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can take appropriate action.</p>
+
+    <h2>9. International Data Transfers</h2>
+    <p>Your information may be transferred to and processed in countries other than your country of residence, including the United States, where our third-party service providers operate. These countries may have different data protection laws. By using the App, you consent to such transfers.</p>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by updating the "Last Updated" date at the top of this page. We encourage you to review this Privacy Policy periodically.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
+    <p>
+        <strong>Scale Dynamics Limited LLC</strong><br>
+        Email: <a href="mailto:developer@auroredgetech.com">developer@auroredgetech.com</a>
+    </p>
 </body>
 </html>
