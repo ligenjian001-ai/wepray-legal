@@ -1,201 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WePray — Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; color: #1d1d1f; background: #fff; line-height: 1.7; }
-        .container { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
-        h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
-        .subtitle { font-size: 15px; color: #6e6e73; margin-bottom: 40px; }
-        h2 { font-size: 22px; font-weight: 600; margin-top: 40px; margin-bottom: 12px; color: #1d1d1f; }
-        h3 { font-size: 17px; font-weight: 600; margin-top: 24px; margin-bottom: 8px; }
-        p { font-size: 15px; color: #424245; margin-bottom: 16px; }
-        ul, ol { font-size: 15px; color: #424245; padding-left: 24px; margin-bottom: 16px; }
-        li { margin-bottom: 8px; }
-        a { color: #06c; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; }
-        th { background: #f5f5f7; font-weight: 600; text-align: left; padding: 10px 14px; border-bottom: 1px solid #d2d2d7; }
-        td { padding: 10px 14px; border-bottom: 1px solid #e8e8ed; color: #424245; }
-        .highlight { background: #f5f5f7; border-radius: 12px; padding: 20px 24px; margin: 20px 0; }
-        .highlight p { margin-bottom: 8px; }
-        .toc { background: #f5f5f7; border-radius: 12px; padding: 24px; margin-bottom: 40px; }
-        .toc ol { padding-left: 20px; margin-bottom: 0; }
-        .toc li { margin-bottom: 4px; }
-        .toc a { color: #1d1d1f; font-weight: 500; }
-        .footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #d2d2d7; font-size: 13px; color: #86868b; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WePray - Privacy Policy</title>
+  <style>
+    html {
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    .container {
+      background: white;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #A67C52;
+      border-bottom: 3px solid #C4935A;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    h2 {
+      color: #A67C52;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      font-size: 1.4em;
+    }
+    h3 {
+      color: #C4935A;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    .effective-date, .contact-box {
+      background: #FFF8F0;
+      padding: 15px;
+      border-left: 4px solid #C4935A;
+      margin-bottom: 30px;
+      border-radius: 6px;
+    }
+    .highlight {
+      background: #fff3cd;
+      padding: 15px;
+      border-radius: 6px;
+      margin: 15px 0;
+      border-left: 4px solid #ffc107;
+    }
+    .important-notice {
+      background: #FFF8F0;
+      padding: 15px;
+      border-radius: 6px;
+      margin: 15px 0;
+      border-left: 4px solid #C4935A;
+    }
+    ul {
+      padding-left: 25px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.9em;
+    }
+    strong {
+      color: #A67C52;
+    }
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 15px 0;
+    }
+    .data-table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 600px;
+      background: white;
+    }
+    .data-table th, .data-table td {
+      border: 1px solid #ddd;
+      padding: 12px 10px;
+      text-align: left;
+    }
+    .data-table th {
+      background-color: #FFF8F0;
+      color: #A67C52;
+      font-weight: bold;
+    }
+    @media (max-width: 600px) {
+      html {
+        font-size: 15px;
+      }
+      .container {
+        padding: 16px 5vw;
+        border-radius: 0;
+        box-shadow: none;
+        max-width: 100vw;
+      }
+      h1 {
+        font-size: 1.5rem;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 1.1em;
+        margin-top: 24px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-size: 1em;
+        margin-top: 18px;
+        margin-bottom: 7px;
+      }
+      .effective-date, .contact-box, .highlight, .important-notice {
+        padding: 11px 7px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        font-size: 0.97em;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      .footer {
+        margin-top: 30px;
+        padding-top: 15px;
+        font-size: 0.85em;
+      }
+      .data-table {
+        min-width: 500px;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="subtitle">Effective Date: April 14, 2026 &nbsp;|&nbsp; Last Updated: April 14, 2026</p>
+  <h1>Privacy Policy</h1>
+  <div class="effective-date">
+    <strong>Last Updated:</strong> April 14, 2026<br>
+    <strong>Effective Date:</strong> April 14, 2026
+  </div>
+  <p>Scale Dynamics Limited LLC ("Company", "we", "us", or "our") is committed to protecting your privacy and ensuring transparency about how we handle your information. This Privacy Policy explains our data practices regarding the WePray: Daily Bible Verse mobile application and related services ("Application" or "Services").</p>
+  <div class="important-notice">
+    <strong>Your Privacy Matters:</strong> By downloading, installing, or using WePray, you acknowledge that you have read and understood this Privacy Policy and consent to our data collection, processing, and usage practices as described herein.
+  </div>
 
-    <p>Scale Dynamics Limited LLC ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>") operates the WePray: Daily Bible Verse mobile application (the "<strong>App</strong>"). This Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your personal information when you use our App, and to help you understand and exercise your privacy rights.</p>
+  <h2>Section 1: Data Collection Practices</h2>
+  <h3>1.1 Onboarding Preferences</h3>
+  <p>During onboarding, WePray may ask about your Bible reading preferences, interests, and goals. This information is:</p>
+  <ul>
+    <li><strong>Stored locally</strong> on your device only</li>
+    <li><strong>Never transmitted</strong> to our servers or any third party</li>
+    <li>Used solely to personalize your in-app experience (e.g., devotional topics, reading suggestions)</li>
+  </ul>
 
-    <div class="toc">
-        <strong>Table of Contents</strong>
-        <ol>
-            <li><a href="#s1">Scope of This Policy</a></li>
-            <li><a href="#s2">Information We Collect</a></li>
-            <li><a href="#s3">How We Use Your Information</a></li>
-            <li><a href="#s4">How We Share Your Information</a></li>
-            <li><a href="#s5">Third-Party Services and SDKs</a></li>
-            <li><a href="#s6">Artificial Intelligence Disclosure</a></li>
-            <li><a href="#s7">App Tracking Transparency</a></li>
-            <li><a href="#s8">Data Retention</a></li>
-            <li><a href="#s9">Data Security</a></li>
-            <li><a href="#s10">Your Privacy Rights</a></li>
-            <li><a href="#s11">International Data Transfers</a></li>
-            <li><a href="#s12">Children's Privacy</a></li>
-            <li><a href="#s13">Changes to This Policy</a></li>
-            <li><a href="#s14">Contact Us</a></li>
-        </ol>
-    </div>
+  <h3>1.2 AI Bible Guide Input</h3>
+  <p>When you use the AI Bible Guide feature, your chat messages are sent to OpenAI's API for processing. This occurs only:</p>
+  <ul>
+    <li>After you provide explicit consent via an in-app consent dialog</li>
+    <li>When you actively submit a question or message in the AI Bible Guide</li>
+    <li>Messages are sent in real-time and are <strong>not stored</strong> on our servers</li>
+  </ul>
 
-    <h2 id="s1">1. Scope of This Policy</h2>
-    <p>This Privacy Policy applies solely to information collected through the WePray mobile application. It does not apply to information collected through other channels, including any third-party website or service that may be linked from within the App. We encourage you to read the privacy policies of every website and service you visit or use.</p>
+  <h3>1.3 Payment Information</h3>
+  <p>WePray does <strong>not</strong> collect, process, or store any payment or financial information. All subscription transactions are handled entirely by Apple through StoreKit 2 and the App Store billing system. We only receive a confirmation of subscription status from Apple.</p>
 
-    <h2 id="s2">2. Information We Collect</h2>
-
-    <h3>2.1 Information You Provide</h3>
-    <ul>
-        <li><strong>Onboarding Preferences.</strong> When you first use the App, you provide information about your faith journey, Bible reading habits, and topics of interest. This information is stored exclusively on your local device and is never transmitted to our servers.</li>
-        <li><strong>Chat Input.</strong> When you use the AI Bible Guide feature, the text of your messages is transmitted to our AI service provider (OpenAI) to generate a response. We present a consent dialog before your first use of this feature.</li>
-        <li><strong>Subscription Transactions.</strong> If you subscribe to WePray Pro, your payment is processed entirely by Apple via StoreKit. We do not collect, process, or store your payment card number, bank account details, or other financial information.</li>
-    </ul>
-
-    <h3>2.2 Information Collected Automatically</h3>
-    <table>
-        <tr><th>Category</th><th>Examples</th><th>Purpose</th><th>Service Provider</th></tr>
-        <tr><td>Usage Analytics</td><td>Screen views, feature interactions, session duration, onboarding completion</td><td>Improve App features and user experience</td><td>Google (Firebase Analytics)</td></tr>
-        <tr><td>Install Attribution</td><td>Campaign source, install timestamp, click-through data</td><td>Measure marketing campaign effectiveness</td><td>Adjust GmbH</td></tr>
-        <tr><td>Device Identifiers</td><td>IDFA (with your consent), IDFV</td><td>Attribution analytics</td><td>Adjust GmbH</td></tr>
-        <tr><td>Device &amp; Technical Data</td><td>Device model, OS version, app version, language, timezone</td><td>Ensure compatibility and diagnose issues</td><td>Google (Firebase Analytics)</td></tr>
+  <h2>Section 2: Automatically Collected Data</h2>
+  <p>The following data is collected automatically through integrated SDKs:</p>
+  <div class="table-wrapper">
+    <table class="data-table">
+      <tr>
+        <th>Data Category</th>
+        <th>SDK / Source</th>
+        <th>Specific Information</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td>Analytics Events</td>
+        <td>Firebase Analytics</td>
+        <td>Screen views, feature usage, session duration, app opens</td>
+        <td>Understanding feature adoption and improving user experience</td>
+      </tr>
+      <tr>
+        <td>Attribution Data</td>
+        <td>Adjust</td>
+        <td>Install source, campaign data, click timestamps</td>
+        <td>Measuring marketing campaign effectiveness (attribution only, not advertising)</td>
+      </tr>
+      <tr>
+        <td>Device Metadata</td>
+        <td>Firebase / Adjust</td>
+        <td>Device model, OS version, app version, language, timezone</td>
+        <td>Technical compatibility, crash diagnosis, performance optimization</td>
+      </tr>
+      <tr>
+        <td>IDFA</td>
+        <td>Adjust (via ATT)</td>
+        <td>Advertising identifier (only with user consent via App Tracking Transparency)</td>
+        <td>Attribution measurement only -- not used for advertising or ad targeting</td>
+      </tr>
     </table>
+  </div>
 
-    <h3>2.3 Information We Do NOT Collect</h3>
-    <div class="highlight">
-        <p>We do <strong>not</strong> collect: your name, email address, phone number, or physical address. We do <strong>not</strong> collect precise geolocation (GPS) data. We do <strong>not</strong> collect health, financial, or biometric data. We do <strong>not</strong> require account creation or login credentials. We do <strong>not</strong> store the content of your AI chat conversations on our servers.</p>
-    </div>
-
-    <h2 id="s3">3. How We Use Your Information</h2>
-    <p>We use the information we collect for the following purposes:</p>
+  <h2>Section 3: What We Do NOT Collect</h2>
+  <div class="highlight">
+    <strong>Privacy-First Design:</strong> WePray is built with a privacy-first approach. We do NOT collect:
     <ul>
-        <li><strong>Provide Core Functionality.</strong> Deliver Bible content, daily devotionals, and personalized study plans based on your local preferences.</li>
-        <li><strong>Power AI Features.</strong> Transmit your chat messages to OpenAI to generate Bible study guidance (only after you provide explicit consent).</li>
-        <li><strong>Improve the App.</strong> Analyze aggregated, anonymized usage patterns to identify popular features, diagnose issues, and prioritize development.</li>
-        <li><strong>Measure Marketing.</strong> Understand which channels drive App installs to allocate marketing resources effectively.</li>
-        <li><strong>Process Subscriptions.</strong> Verify your subscription status via Apple StoreKit to unlock premium features.</li>
+      <li>Name, email address, or phone number</li>
+      <li>GPS location or precise geolocation data</li>
+      <li>Health data or biometric information</li>
+      <li>Contacts, photos, or files from your device</li>
+      <li>Browsing history outside the app</li>
     </ul>
+    <p style="margin-top: 10px; margin-bottom: 0;"><strong>No account creation is required.</strong> All reading progress, streaks, devotional preferences, and bookmarks are stored locally on your device. <strong>No chat history is stored</strong> on our servers -- AI conversations exist only during the active session.</p>
+  </div>
 
-    <h2 id="s4">4. How We Share Your Information</h2>
-    <p>We do <strong>not</strong> sell, rent, or trade your personal information. We share information only with the third-party service providers listed in Section 5 below, solely for the purposes described in this Policy. We may also disclose information if required by law, regulation, legal process, or governmental request.</p>
+  <h2>Section 4: How We Use Data</h2>
+  <h3>4.1 Service Delivery and Improvement</h3>
+  <p>We use automatically collected data to:</p>
+  <ul>
+    <li>Understand which features are most valuable to users</li>
+    <li>Identify and fix bugs, crashes, and performance issues</li>
+    <li>Guide product development and feature prioritization</li>
+    <li>Optimize the onboarding experience</li>
+  </ul>
 
-    <h2 id="s5">5. Third-Party Services and SDKs</h2>
-    <p>The App integrates the following third-party services, each operating under its own privacy policy:</p>
-    <table>
-        <tr><th>Service</th><th>Provider</th><th>Purpose</th><th>Data Received</th><th>Privacy Policy</th></tr>
-        <tr><td>Firebase Analytics</td><td>Google LLC</td><td>Usage analytics</td><td>Anonymized event data, device metadata</td><td><a href="https://firebase.google.com/support/privacy">Link</a></td></tr>
-        <tr><td>Adjust SDK</td><td>Adjust GmbH</td><td>Install attribution (not advertising)</td><td>Device identifiers, install source</td><td><a href="https://www.adjust.com/terms/privacy-policy/">Link</a></td></tr>
-        <tr><td>OpenAI API</td><td>OpenAI, L.L.C.</td><td>AI chat &amp; text-to-speech</td><td>User chat messages (real-time, not stored)</td><td><a href="https://openai.com/privacy">Link</a></td></tr>
-        <tr><td>Superwall SDK</td><td>Superwall, Inc.</td><td>Paywall presentation</td><td>Subscription status, paywall interaction events</td><td><a href="https://superwall.com/privacy">Link</a></td></tr>
-        <tr><td>StoreKit</td><td>Apple Inc.</td><td>In-app subscriptions</td><td>Purchase transactions</td><td><a href="https://www.apple.com/legal/privacy/">Link</a></td></tr>
+  <h3>4.2 Marketing Attribution</h3>
+  <p>We use Adjust solely to measure the effectiveness of marketing campaigns by understanding where app installs originate. We do <strong>not</strong> use this data for targeted advertising, retargeting, or selling to advertisers.</p>
+
+  <h3>4.3 AI Service Delivery</h3>
+  <p>Chat messages sent to OpenAI are used solely to generate real-time responses to your Bible questions. We do not use your chat messages for training, analytics, or any other purpose.</p>
+
+  <h2>Section 5: Third-Party Services</h2>
+  <p>WePray integrates with the following third-party services:</p>
+  <div class="table-wrapper">
+    <table class="data-table">
+      <tr>
+        <th>Service</th>
+        <th>Provider</th>
+        <th>Purpose</th>
+        <th>Data Shared</th>
+      </tr>
+      <tr>
+        <td>Firebase Analytics</td>
+        <td>Google LLC</td>
+        <td>App analytics, crash reporting, performance monitoring</td>
+        <td>Anonymized usage events, device metadata</td>
+      </tr>
+      <tr>
+        <td>Adjust</td>
+        <td>Adjust GmbH</td>
+        <td>Install attribution measurement</td>
+        <td>IDFA (with consent), install events, device metadata</td>
+      </tr>
+      <tr>
+        <td>OpenAI API</td>
+        <td>OpenAI, Inc.</td>
+        <td>AI Bible Guide chat responses</td>
+        <td>User chat messages (with consent, not stored by us)</td>
+      </tr>
+      <tr>
+        <td>Superwall</td>
+        <td>Superwall, Inc.</td>
+        <td>Paywall presentation and A/B testing</td>
+        <td>Anonymized paywall interaction events</td>
+      </tr>
+      <tr>
+        <td>StoreKit 2</td>
+        <td>Apple Inc.</td>
+        <td>In-app subscription billing and management</td>
+        <td>Subscription status (handled entirely by Apple)</td>
+      </tr>
     </table>
-    <div class="highlight">
-        <p><strong>Important:</strong> Adjust SDK is used <em>exclusively</em> for install attribution analytics. It does <strong>not</strong> serve advertisements, and we do <strong>not</strong> use it for behavioral advertising or ad targeting.</p>
-    </div>
+  </div>
+  <p>Each third-party service operates under its own privacy policy. We encourage you to review their respective privacy policies for more information about their data practices.</p>
 
-    <h2 id="s6">6. Artificial Intelligence Disclosure</h2>
-    <p>The App's "AI Bible Guide" and "Listen" features are powered by OpenAI's language and speech models. When you use these features:</p>
-    <ul>
-        <li>Your input text is sent to OpenAI's servers via encrypted HTTPS connection.</li>
-        <li>OpenAI processes your input to generate a response, which is returned to the App in real time.</li>
-        <li>Neither we nor OpenAI permanently store the content of individual chat conversations generated through our App's API integration (subject to OpenAI's data retention policy for API usage).</li>
-        <li>AI-generated responses are for informational and devotional purposes only and should not be considered a substitute for professional pastoral counseling, theological scholarship, or medical/legal advice.</li>
-    </ul>
-    <p>You will be presented with a clear consent dialog before your first use of any AI-powered feature. You may decline and still use all non-AI features of the App.</p>
+  <h2>Section 6: AI Disclosure</h2>
+  <h3>6.1 How AI Works in WePray</h3>
+  <p>The AI Bible Guide is powered by OpenAI's language models. When you submit a question:</p>
+  <ul>
+    <li>Your message is sent to OpenAI's API over an encrypted connection</li>
+    <li>OpenAI processes the message and returns a response</li>
+    <li>The conversation is displayed in the app in real-time</li>
+  </ul>
 
-    <h2 id="s7">7. App Tracking Transparency</h2>
-    <p>In accordance with Apple's App Tracking Transparency (ATT) framework, we will request your permission before accessing your device's Identifier for Advertisers (IDFA). This identifier is used solely by Adjust for install attribution — <strong>not</strong> for ad tracking or personalized advertising. You may change your preference at any time:</p>
-    <p><strong>Settings → Privacy &amp; Security → Tracking → WePray</strong></p>
-    <p>If you deny tracking, the App will function normally; only attribution analytics accuracy will be reduced.</p>
+  <h3>6.2 Consent</h3>
+  <p>Before your first use of the AI Bible Guide, a consent dialog explains that your messages will be sent to OpenAI. You must accept this before the feature becomes available. You can choose not to use the AI Bible Guide, and all other app features will remain fully functional.</p>
 
-    <h2 id="s8">8. Data Retention</h2>
-    <table>
-        <tr><th>Data Type</th><th>Retention Period</th><th>Deletion Method</th></tr>
-        <tr><td>Local app data (preferences, progress)</td><td>Until you uninstall the App</td><td>Delete the App from your device</td></tr>
-        <tr><td>Firebase Analytics events</td><td>Up to 14 months (Google default)</td><td>Automatically purged by Google</td></tr>
-        <tr><td>Adjust attribution data</td><td>Per Adjust's retention policy</td><td>Contact Adjust or us</td></tr>
-        <tr><td>AI chat conversations</td><td>Not retained after response delivery</td><td>N/A — not stored</td></tr>
-        <tr><td>Subscription records</td><td>Managed by Apple</td><td>Apple account settings</td></tr>
+  <h3>6.3 Data Retention by OpenAI</h3>
+  <p>WePray does not store your chat messages on any server. OpenAI's data retention and processing practices are governed by OpenAI's own privacy policy and API data usage policies. As of our integration, OpenAI's API does not use submitted data for training purposes.</p>
+
+  <h2>Section 7: App Tracking Transparency (ATT)</h2>
+  <h3>7.1 IDFA Collection</h3>
+  <p>WePray requests access to your device's Identifier for Advertisers (IDFA) through Apple's App Tracking Transparency (ATT) framework. This prompt appears when you first open the app.</p>
+
+  <h3>7.2 Purpose</h3>
+  <p>The IDFA is used <strong>exclusively</strong> for Adjust attribution measurement -- to understand which marketing campaigns drive app installs. It is:</p>
+  <ul>
+    <li><strong>NOT</strong> used for advertising or ad targeting (WePray contains no ads)</li>
+    <li><strong>NOT</strong> shared with advertising networks</li>
+    <li><strong>NOT</strong> used for cross-app tracking or user profiling</li>
+  </ul>
+
+  <h3>7.3 Declining ATT</h3>
+  <p>If you decline the ATT prompt, the app functions identically. No IDFA is collected, and attribution measurement falls back to privacy-friendly methods. Your experience is not affected in any way.</p>
+
+  <h2>Section 8: Data Retention</h2>
+  <div class="table-wrapper">
+    <table class="data-table">
+      <tr>
+        <th>Data Type</th>
+        <th>Storage Location</th>
+        <th>Retention Period</th>
+      </tr>
+      <tr>
+        <td>Onboarding preferences, reading progress, streaks</td>
+        <td>Local device only</td>
+        <td>Until app is deleted</td>
+      </tr>
+      <tr>
+        <td>AI chat messages</td>
+        <td>Not stored (real-time only)</td>
+        <td>Duration of active session only</td>
+      </tr>
+      <tr>
+        <td>Firebase Analytics events</td>
+        <td>Google servers</td>
+        <td>Up to 14 months (Google default)</td>
+      </tr>
+      <tr>
+        <td>Adjust attribution data</td>
+        <td>Adjust servers</td>
+        <td>Per Adjust's data retention policy</td>
+      </tr>
+      <tr>
+        <td>Subscription status</td>
+        <td>Apple servers</td>
+        <td>Per Apple's data retention policy</td>
+      </tr>
     </table>
+  </div>
 
-    <h2 id="s9">9. Data Security</h2>
-    <p>We implement commercially reasonable technical and organizational measures to protect the information transmitted through the App, including:</p>
-    <ul>
-        <li>All network communications use TLS/HTTPS encryption.</li>
-        <li>API keys and credentials are stored securely and are not embedded in client-accessible source code.</li>
-        <li>We do not operate backend servers that store user data; all persistent data resides on your device or with the third-party providers listed above.</li>
-    </ul>
-    <p>No method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee its absolute security.</p>
+  <h2>Section 9: Data Security</h2>
+  <h3>9.1 Technical Safeguards</h3>
+  <p>We implement appropriate security measures including:</p>
+  <ul>
+    <li><strong>Encryption in Transit:</strong> All network communications use TLS encryption</li>
+    <li><strong>API Key Security:</strong> Third-party API keys are securely managed and never exposed in client-side code</li>
+    <li><strong>Minimal Data Collection:</strong> We collect only what is necessary for the app to function</li>
+    <li><strong>Local-First Architecture:</strong> Sensitive user data (preferences, reading history) never leaves your device</li>
+  </ul>
 
-    <h2 id="s10">10. Your Privacy Rights</h2>
+  <h3>9.2 Data Breach Response</h3>
+  <p>In the unlikely event of a data security incident affecting user data, we commit to:</p>
+  <ul>
+    <li>Immediate containment and assessment of the breach</li>
+    <li>Notification to affected users within 72 hours</li>
+    <li>Cooperation with relevant regulatory authorities</li>
+    <li>Implementation of additional safeguards to prevent recurrence</li>
+  </ul>
 
-    <h3>10.1 All Users</h3>
-    <ul>
-        <li><strong>Opt out of tracking:</strong> Deny or revoke IDFA access via iOS Settings.</li>
-        <li><strong>Delete local data:</strong> Uninstall the App to remove all on-device data.</li>
-        <li><strong>Manage subscriptions:</strong> Settings → [Your Name] → Subscriptions.</li>
-        <li><strong>Decline AI features:</strong> Tap "Cancel" on the AI consent dialog to use the App without AI chat.</li>
-    </ul>
+  <h2>Section 10: User Rights</h2>
+  <h3>10.1 All Users</h3>
+  <p>Regardless of your location, you have the right to:</p>
+  <ul>
+    <li>Decline the ATT prompt and opt out of IDFA collection</li>
+    <li>Delete all local data by uninstalling the app</li>
+    <li>Choose not to use the AI Bible Guide feature</li>
+    <li>Request information about what data we hold (contact us via email)</li>
+    <li>Limit analytics collection through iOS device settings (Settings > Privacy > Analytics)</li>
+  </ul>
 
-    <h3>10.2 California Residents (CCPA/CPRA)</h3>
-    <p>Under the California Consumer Privacy Act and the California Privacy Rights Act, California residents have the right to:</p>
-    <ul>
-        <li>Know what personal information is collected and how it is used.</li>
-        <li>Request deletion of personal information.</li>
-        <li>Opt out of the "sale" or "sharing" of personal information. <strong>We do not sell or share personal information</strong> as defined by the CCPA/CPRA.</li>
-        <li>Non-discrimination for exercising privacy rights.</li>
-    </ul>
-    <p>To exercise these rights, contact us at the email address in Section 14.</p>
+  <h3>10.2 California Residents (CCPA)</h3>
+  <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+  <ul>
+    <li><strong>Right to Know:</strong> Request disclosure of the categories and specific pieces of personal information we collect</li>
+    <li><strong>Right to Delete:</strong> Request deletion of personal information we hold about you</li>
+    <li><strong>Right to Opt-Out:</strong> WePray does <strong>not</strong> sell personal information to third parties</li>
+    <li><strong>Non-Discrimination:</strong> We will not discriminate against you for exercising your CCPA rights</li>
+  </ul>
 
-    <h3>10.3 European Economic Area, UK &amp; Switzerland (GDPR/UK GDPR)</h3>
-    <p>If you are located in the EEA, UK, or Switzerland, you have the following rights under the General Data Protection Regulation:</p>
-    <ul>
-        <li><strong>Access:</strong> Request a copy of your personal data.</li>
-        <li><strong>Rectification:</strong> Request correction of inaccurate data.</li>
-        <li><strong>Erasure:</strong> Request deletion of your data ("right to be forgotten").</li>
-        <li><strong>Restriction:</strong> Request restriction of processing.</li>
-        <li><strong>Data Portability:</strong> Receive your data in a structured, machine-readable format.</li>
-        <li><strong>Object:</strong> Object to processing based on legitimate interests.</li>
-        <li><strong>Withdraw Consent:</strong> Withdraw consent at any time where processing is based on consent.</li>
-    </ul>
-    <p><strong>Legal Bases for Processing:</strong> We process personal data based on (a) your consent (ATT tracking, AI chat usage), (b) legitimate interest (analytics to improve the App), and (c) contract performance (subscription fulfillment).</p>
-    <p>To exercise these rights or lodge a complaint with your local supervisory authority, contact us at the email address in Section 14.</p>
+  <h3>10.3 European Residents (GDPR)</h3>
+  <p>If you are located in the European Economic Area (EEA) or the United Kingdom, you have additional rights under the General Data Protection Regulation (GDPR):</p>
+  <ul>
+    <li><strong>Right of Access:</strong> Obtain a copy of your personal data</li>
+    <li><strong>Right to Rectification:</strong> Correct inaccurate personal data</li>
+    <li><strong>Right to Erasure:</strong> Request deletion of your personal data</li>
+    <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format</li>
+    <li><strong>Right to Object:</strong> Object to processing based on legitimate interests</li>
+    <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time where processing is based on consent</li>
+  </ul>
+  <p>To exercise any of these rights, please contact us at the email address below.</p>
 
-    <h2 id="s11">11. International Data Transfers</h2>
-    <p>Your information may be transferred to and processed in countries other than your country of residence, including the United States, where our third-party service providers (OpenAI, Google, Adjust) maintain servers. These countries may have different data protection laws than your jurisdiction. Where required, we rely on Standard Contractual Clauses or other approved transfer mechanisms to ensure adequate protection of your data.</p>
+  <h2>Section 11: Children's Privacy</h2>
+  <p>WePray is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will promptly delete such information from our systems.</p>
+  <p>If you are a parent or guardian and believe your child under 13 has used WePray and provided personal information, please contact us immediately so we can take appropriate action.</p>
 
-    <h2 id="s12">12. Children's Privacy</h2>
-    <p>The App is not directed to individuals under the age of 13 (or the minimum age of digital consent in your jurisdiction). We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately and we will take steps to delete such information.</p>
+  <h2>Section 12: International Data Transfers</h2>
+  <p>Your data may be processed in countries outside your country of residence through our third-party service providers:</p>
+  <ul>
+    <li><strong>United States:</strong> Firebase Analytics (Google), OpenAI, Superwall, Apple</li>
+    <li><strong>Germany/EU:</strong> Adjust GmbH</li>
+  </ul>
+  <p>We ensure that appropriate safeguards are in place for international data transfers, including reliance on Standard Contractual Clauses (SCCs) and other legally recognized transfer mechanisms where applicable.</p>
 
-    <h2 id="s13">13. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make material changes, we will update the "Last Updated" date at the top of this page. We encourage you to periodically review this page for the latest information on our privacy practices.</p>
+  <h2>Section 13: Policy Updates</h2>
+  <h3>13.1 Changes to This Policy</h3>
+  <p>We may update this Privacy Policy to reflect:</p>
+  <ul>
+    <li>Changes in our data practices or integrated services</li>
+    <li>New legal requirements or regulatory guidance</li>
+    <li>Improvements in our privacy protection measures</li>
+  </ul>
 
-    <h2 id="s14">14. Contact Us</h2>
-    <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
-    <div class="highlight">
-        <p><strong>Scale Dynamics Limited LLC</strong></p>
-        <p>Privacy Inquiries: <a href="mailto:developer@auroredgetech.com">developer@auroredgetech.com</a></p>
-    </div>
+  <h3>13.2 Notification of Changes</h3>
+  <p>Significant changes will be communicated through:</p>
+  <ul>
+    <li>In-app notifications when you next open WePray</li>
+    <li>Updated "Last Updated" date at the top of this policy</li>
+  </ul>
 
-    <div class="footer">
-        <p>&copy; 2026 Scale Dynamics Limited LLC. All rights reserved.</p>
-    </div>
+  <h3>13.3 Continued Use</h3>
+  <p>Your continued use of WePray after any Privacy Policy changes constitutes acceptance of the updated terms. If you disagree with changes, please discontinue use of the application and delete it from your device.</p>
+
+  <h2>Contact Information</h2>
+  <div class="contact-box">
+    <h3>Privacy-Related Inquiries</h3>
+    <p>For questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+    <p><strong>Email:</strong> developer@auroredgetech.com</p>
+    <p><strong>Company:</strong> Scale Dynamics Limited LLC</p>
+  </div>
+
+  <div class="footer">
+    <p><strong>&copy; 2026 Scale Dynamics Limited LLC. All rights reserved.</strong></p>
+    <p>WePray: Daily Bible Verse is a product of Scale Dynamics Limited LLC.</p>
+    <p><em>This Privacy Policy was last updated on April 14, 2026</em></p>
+  </div>
 </div>
 </body>
 </html>
